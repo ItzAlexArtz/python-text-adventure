@@ -77,9 +77,12 @@ def game():
                 return complete
 
             else:
-                print("You killed the spider!")
-                complete = 1
-                return complete
+                print ("You killed the spider!")
+                print ("As you want to walk away you heard a girl screaming!")
+                explore = input ('Do you want to find out who screamed? [y/n] ')
+                if explore in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                    complete = 1
+                    return complete
 
         # WITHOUT STICK
         else:
@@ -109,10 +112,10 @@ def game():
 
             else:
                 print ("You killed the spider!")
-                complete = 1
                 print ("As you want to walk away you heard a girl screaming!")
                 explore = input ('Do you want to find out who screamed? [y/n] ')
                 if explore in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                    complete = 1
                     return complete
             
     #DON'T FIGHT SPIDER
