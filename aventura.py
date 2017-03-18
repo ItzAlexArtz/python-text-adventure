@@ -14,6 +14,7 @@ def game():
     ch1 = str(input("Do you take it? [y/n]: "))
 
 
+
     #STICK TAKEN
     if ch1 in ['y', 'Y', 'Yes', 'YES', 'yes']:
         print("You have taken the stick!")
@@ -81,8 +82,28 @@ def game():
                 print ("As you want to walk away you heard a girl screaming!")
                 explore = input ('Do you want to find out who screamed? [y/n] ')
                 if explore in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
-                    complete = 1
-                    return complete
+                    print ("As you where going further into the cave, you see a princess!")
+                    fight = input("Do you want to save her?")
+                    if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                        print ("As you walk closer to her a skeleton with a sword and a shield reveals himself from the darkness of the cave!")
+                        fight = str(input("Do you try to fight it? [Y/N]"))
+                        if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                            print ("You choose to fight it!")
+                            time.sleep(2)
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            print("                  Fighting...                    ")
+                            print("   YOU MUST HIT ABOVE A 20 TO KILL THE Skeleton  ")
+                            print("IF THE Skeleton HITS HIGHER THAN YOU, YOU WILL DIE")
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            time.sleep(2)
+                            fdmg1 = int(random.randint(20, 30))
+                            edmg1 = int(random.randint(10, 15))
+                            print("you hit a", fdmg1)
+                            print("the skeleton hits a", edmg1)
+                            time.sleep(2)
+                            complete = 1
+                            return complete
+
 
         # WITHOUT STICK
         else:
@@ -90,11 +111,11 @@ def game():
             time.sleep(2)
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print("                  Fighting...                   ")
-            print("   YOU MUST HIT ABOVE A 5 TO KILL THE SPIDER    ")
+            print("   YOU MUST HIT ABOVE A 10 TO KILL THE SPIDER    ")
             print("IF THE SPIDER HITS HIGHER THAN YOU, YOU WILL DIE")
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             time.sleep(2)
-            fdmg1 = int(random.randint(1, 8))
+            fdmg1 = int(random.randint(10, 12))
             edmg1 = int(random.randint(1, 5))
             print("you hit a", fdmg1)
             print("the spider hits a", edmg1)
@@ -113,11 +134,30 @@ def game():
             else:
                 print ("You killed the spider!")
                 print ("As you want to walk away you heard a girl screaming!")
-                explore = input ('Do you want to find out who screamed? [y/n] ')
-                if explore in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
-                    complete = 1
-                    return complete
-            
+                explore = input ('Do you want to find out who screamed? [y/n]')
+                fight = input("Do you want to save her? [y/n]")
+                if explore in ['y', 'Y', 'yes', 'YES', 'Yes']:
+                    print ("As you where going further into the cave ,you saw a princess! Do you want to save her?")
+                    if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                        print ("As you walk closer to her a skeleton with a sword and a shield reveals himself from the darkness of the cave!")
+                        fight = str(input("Do you try to fight it? [Y/N]"))
+                        if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
+                            print ("You choose to fight it!")
+                            time.sleep(2)
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            print("                  Fighting...                    ")
+                            print("   YOU MUST HIT ABOVE A 20 TO KILL THE Skeleton  ")
+                            print("IF THE Skeleton HITS HIGHER THAN YOU, YOU WILL DIE")
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            time.sleep(2)
+                            fdmg1 = int(random.randint(1, 20))
+                            edmg1 = int(random.randint(1, 15))
+                            print("you hit a", fdmg1)
+                            print("the skeleton hits a", edmg1)
+                            time.sleep(2)
+                            complete = 1
+                            return complete
+
     #DON'T FIGHT SPIDER
     elif ch3 in ['n', 'N', 'No', 'NO', 'no']:
         print ("You choose not to fight the spider.")
