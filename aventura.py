@@ -101,9 +101,23 @@ def game():
                             print("you hit a", fdmg1)
                             print("the skeleton hits a", edmg1)
                             time.sleep(2)
+                            print("You saved the princess and she thanks you for saving her!")
+                            print("Getting out of the cave .......")
+                            print("Getting the princess to her kingdom......")
+                            time.sleep(2)
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            print("       You Won the Game!     Congrats!           ")
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             complete = 1
                             return complete
 
+
+
+
+
+                else:
+                    if explore in ['n', 'N', 'no', 'NO', 'No', ]:
+                        print("When you wanted to get out of the cave and go home a giant sider jumped in front of you from the darkness and killed you!")                   
 
         # WITHOUT STICK
         else:
@@ -137,7 +151,7 @@ def game():
                 explore = input ('Do you want to find out who screamed? [y/n]')
                 fight = input("Do you want to save her? [y/n]")
                 if explore in ['y', 'Y', 'yes', 'YES', 'Yes']:
-                    print ("As you where going further into the cave ,you saw a princess! Do you want to save her?")
+                    print ("As you where going further into the cave ,you saw a princess! Do you want to save her? [y/n]")
                     if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
                         print ("As you walk closer to her a skeleton with a sword and a shield reveals himself from the darkness of the cave!")
                         fight = str(input("Do you try to fight it? [Y/N]"))
@@ -155,6 +169,13 @@ def game():
                             print("you hit a", fdmg1)
                             print("the skeleton hits a", edmg1)
                             time.sleep(2)
+                            print("You saved the princess and she thanks you for saving her!")
+                            print("Getting out of the cave .......")
+                            print("Getting the princess to her kingdom......")
+                            time.sleep(2)
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            print("     You Won the Game!     Congrats!             ")
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             complete = 1
                             return complete
 
