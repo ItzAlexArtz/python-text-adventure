@@ -83,7 +83,7 @@ def game():
                 explore = input ('Do you want to find out who screamed? [y/n] ')
                 if explore in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
                     print ("As you where going further into the cave, you see a princess!")
-                    fight = input("Do you want to save her?")
+                    fight = input("Do you want to save her? [y/n]")
                     if fight in ['y', 'Y', 'yes', 'YES', 'Yes', ]:
                         print ("As you walk closer to her a skeleton with a sword and a shield reveals himself from the darkness of the cave!")
                         fight = str(input("Do you try to fight it? [Y/N]"))
