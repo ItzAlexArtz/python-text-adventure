@@ -111,13 +111,9 @@ def game():
                             complete = 1
                             return complete
 
-
-
-
-
                 else:
                     if explore in ['n', 'N', 'no', 'NO', 'No', ]:
-                        print("When you wanted to get out of the cave and go home a giant sider jumped in front of you from the darkness and killed you!")                   
+                        print("When you wanted to get out of the cave and go home a giant spider jumped in front of you from the darkness and killed you!")                   
 
         # WITHOUT STICK
         else:
