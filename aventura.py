@@ -110,9 +110,15 @@ def game():
                             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             complete = 1
                             return complete
+                    else:
+                        if fight in ['n', 'N', 'no', ]:
+                            print("You choose not to fight the Skeleton")
+                            time.sleep(1)
+                            print("As yo turn away it ambushes you with its sword and kills you!!!") 
+                              
 
-                else:
-                    if explore in ['n', 'N', 'no', 'NO', 'No', ]:
+                
+                elif explore in ['n', 'N', 'no', 'NO', 'No', ]:
                         print("When you wanted to get out of the cave and go home a giant spider jumped in front of you from the darkness and killed you!")                   
 
         # WITHOUT STICK
@@ -169,11 +175,22 @@ def game():
                             print("Getting out of the cave .......")
                             print("Getting the princess to her kingdom......")
                             time.sleep(2)
-                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             print("     You Won the Game!     Congrats!             ")
                             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             complete = 1
                             return complete
+                    else:
+                        if fight in ['n', 'N', 'no' , ]:
+                            print("You choose not to fight the Skeleton")
+                            time.sleep(1)
+                            print("As yo turn away it ambushes you with its sword and kills you!!!") 
+                            
+                    
+                elif explore in ['n', 'N', 'no', 'NO', 'No', ]:
+                        print("When you wanted to get out of the cave and go home a giant spider jumped in front of you from the darkness and killed you!")                   
+
+                      
 
     #DON'T FIGHT SPIDER
     elif ch3 in ['n', 'N', 'No', 'NO', 'no']:
@@ -183,8 +200,6 @@ def game():
         complete = 0
         return complete
 
-    
-                
 # game loop
 alive = True
 while alive:
