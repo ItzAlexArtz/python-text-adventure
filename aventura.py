@@ -175,7 +175,7 @@ def game():
                             print("Getting out of the cave .......")
                             print("Getting the princess to her kingdom......")
                             time.sleep(2)
-                             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             print("     You Won the Game!     Congrats!             ")
                             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
                             complete = 1
